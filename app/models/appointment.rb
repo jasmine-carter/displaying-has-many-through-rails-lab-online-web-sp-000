@@ -13,4 +13,5 @@ class Appointment < ApplicationRecord
   def format_time
     self.appointment_datetime.to_formatted_s(:long)
   end
+
 end
