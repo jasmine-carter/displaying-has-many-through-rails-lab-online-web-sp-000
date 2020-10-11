@@ -1,4 +1,4 @@
 
 <h3><%=link_to @appointment.doctor_name, doctor_path(@appointment.doctor)%></h3>
 <h3><%=link_to @appointment.patient_name, patient_path(@appointment.patient) %> </h3>
-<h3><%=@appointment.appointment_datetime%></h3>
+<h3><%=@appointment.appointment_datetime.local%></h3>
