@@ -1,5 +1,5 @@
 <h3><%=@doctor.name%> </h3>
-
+<%=binding.pry%>
 <%=@doctor.appointments.each do |a| %>
 <ul>
 <li><%=a.format_time%>, <%=a.patient.name%> </li>
