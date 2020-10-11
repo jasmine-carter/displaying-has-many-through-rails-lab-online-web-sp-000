@@ -9,4 +9,8 @@ class Appointment < ApplicationRecord
   def patient_name
     self.patient.name
   end
+
+  def format_time
+    self.appointment_datetime.to_formatted_s(:rfc822)
+  end
 end
