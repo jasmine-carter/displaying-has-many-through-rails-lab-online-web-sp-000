@@ -1,6 +1,6 @@
 <h3><%=@doctor.name%> </h3>
 <%=@doctor.appointments.each do |a| %>
 <ul>
-<li><%= link_to a.patient.name, patient_path(a.patient)%> <%=a.date.format_time %> </li>
+<li><%= link_to a.patient.name, patient_path(a.patient) <%=a.date.format_time %> </li>
 </ul>
 <%end %>
