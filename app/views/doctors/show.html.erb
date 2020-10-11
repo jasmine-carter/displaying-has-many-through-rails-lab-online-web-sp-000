@@ -1,8 +1,7 @@
 <h3><%=@doctor.name%> </h3>
 
-<ul>
 <%=@doctor.appointments.each do |a| %>
-
+<ul>
 <li><%=a.format_time%> </li>
 </ul>
 <%end %>
