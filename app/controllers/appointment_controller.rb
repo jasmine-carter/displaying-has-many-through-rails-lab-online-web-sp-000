@@ -4,6 +4,7 @@ class AppointmentController < ApplicationController
   end
 
   def index
+
   end
 
 
