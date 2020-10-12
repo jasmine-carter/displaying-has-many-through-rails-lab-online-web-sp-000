@@ -1,6 +1,7 @@
 <h1> Patients </h1>
 
 <%@patients.each do |p| %>
-
-  <ul><%="Name: #{p.name} Number of Appointments: #{p.appointments.count}"%> </ul>
+<ul>
+  <li><%="Name: #{p.name} Number of Appointments: #{p.appointments.count}"%> </li>
   <% end %>
+</ul>
