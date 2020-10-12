@@ -4,7 +4,7 @@ class Doctor < ApplicationRecord
 
 
   def app_time
-    self.appointment_datetime.strftime("%B %d, %Y at %H:%M")
+    self.appointment.appointment_datetime.strftime("%B %d, %Y at %H:%M")
   end
 
 end
