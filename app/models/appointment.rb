@@ -14,4 +14,8 @@ class Appointment < ApplicationRecord
     self.appointment_datetime.to_formatted_s(:long)
   end
 
+  def doc_app
+    self.appointment_datetime.strftime("%B %d, %Y at %H:%M")
+  end
+
 end
