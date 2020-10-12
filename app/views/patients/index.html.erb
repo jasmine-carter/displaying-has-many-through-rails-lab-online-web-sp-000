@@ -3,6 +3,6 @@
 <%@patients.each do |p| %>
 
 <ul>
-  <li><%= pluralize(p.appointments.count, 'Appointment') %>, <%= link_to p.name, patient_path(p) %></li>
+  <li>Name: "#{p.name}" Number of Appointments: "#{p.appointments.count}" </li>
   <% end %>
 </ul>
